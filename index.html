@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Will You Be My Valentine?</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #ffdde1;
+            padding: 50px;
+        }
+        h1 {
+            color: #d6336c;
+        }
+        button {
+            padding: 12px 20px;
+            font-size: 16px;
+            margin: 10px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        #yesBtn {
+            background-color: #ff4d6d;
+            color: white;
+        }
+        #noBtn {
+            background-color: #6c757d;
+            color: white;
+        }
+        #poem {
+            display: none;
+            margin-top: 30px;
+            font-size: 18px;
+            color: #333;
+            white-space: pre-line;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Will You Be My Valentine? ❤️</h1>
+
+<button id="yesBtn" onclick="showPoem()">Yes 💖</button>
+<button id="noBtn" onclick="noClicked()">No 💔</button>
+
+<div id="poem">
+My love, from the moment you came into my life,
+You turned ordinary days into something magical.
+Your smile feels like sunshine,
+Your laugh is my favorite sound.
+
+If love had a heartbeat,
+It would sound like your name in my chest.
+So today, tomorrow, and every day after,
+I choose you.
+
+Will you choose me too? ❤️
+</div>
+
+<script>
+function showPoem() {
+    document.getElementById("poem").style.display = "block";
+    document.getElementById("yesBtn").style.display = "none";
+    document.getElementById("noBtn").style.display = "none";
+}
+
+function noClicked() {
+    alert("Are you sure you want to do this? 🥺");
+    document.getElementById("noBtn").style.display = "none";
+}
+</script>
+
+</body>
+</html>
