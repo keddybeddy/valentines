@@ -1,72 +1,99 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Will You Be My Valentine?</title>
+    <title>Will You Be My Valentine? 💘</title>
     <style>
         body {
-            text-align: center;
             font-family: Arial, sans-serif;
-            background-color: #ffdde1;
+            background: linear-gradient(to right, #ffdde1, #ee9ca7);
+            text-align: center;
             padding: 50px;
         }
+
         h1 {
+            font-size: 30px;
             color: #d6336c;
+            margin-bottom: 20px;
         }
+
         button {
-            padding: 12px 20px;
-            font-size: 16px;
-            margin: 10px;
+            padding: 14px 28px;
+            font-size: 18px;
+            margin: 15px;
             border: none;
-            border-radius: 10px;
+            border-radius: 12px;
             cursor: pointer;
         }
+
         #yesBtn {
             background-color: #ff4d6d;
             color: white;
         }
+
         #noBtn {
             background-color: #6c757d;
             color: white;
         }
-        #poem {
+
+        #poemSection {
             display: none;
-            margin-top: 30px;
-            font-size: 18px;
+            margin-top: 40px;
+            font-size: 20px;
             color: #333;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
             white-space: pre-line;
+        }
+
+        .cupid {
+            width: 200px;
+            margin-top: 25px;
         }
     </style>
 </head>
 <body>
 
-<h1>Will You Be My Valentine? ❤️</h1>
+<h1>Will You Be My Valentine? 💘🥰❤️💞💕💓💖✨</h1>
 
-<button id="yesBtn" onclick="showPoem()">Yes 💖</button>
-<button id="noBtn" onclick="noClicked()">No 💔</button>
+<button id="yesBtn" onclick="showPoem()">Yes 💖😍💍✨</button>
+<button id="noBtn" onclick="noClicked()">No 💔🥺</button>
 
-<div id="poem">
-My love, from the moment you came into my life,
-You turned ordinary days into something magical.
-Your smile feels like sunshine,
-Your laugh is my favorite sound.
+<div id="poemSection">
+My love 💖✨,
 
-If love had a heartbeat,
-It would sound like your name in my chest.
-So today, tomorrow, and every day after,
-I choose you.
+From the moment you came into my life 😍💫,
+everything felt brighter 🌟.
+Your smile melts my heart 💓,
+your laugh is my favorite melody 🎶💕.
 
-Will you choose me too? ❤️
+You are my peace 🕊️,
+my happiness 😊,
+my greatest blessing 🙏💘.
+
+Cupid must have aimed perfectly 🎯💘,
+because my heart chose you instantly 💞.
+
+So today, tomorrow, and forever ♾️💍,
+I choose you ❤️🥰💖.
+
+Will you choose me too? 💘✨
+
+<br><br>
+
+<img src="https://cdn.pixabay.com/photo/2016/02/13/13/11/cupid-1197836_1280.png" class="cupid">
+
 </div>
 
 <script>
 function showPoem() {
-    document.getElementById("poem").style.display = "block";
+    document.getElementById("poemSection").style.display = "block";
     document.getElementById("yesBtn").style.display = "none";
     document.getElementById("noBtn").style.display = "none";
 }
 
 function noClicked() {
-    alert("Are you sure you want to do this? 🥺");
+    alert("Are you suuuure? 🥺💔 Think carefully 😭💘");
     document.getElementById("noBtn").style.display = "none";
 }
 </script>
